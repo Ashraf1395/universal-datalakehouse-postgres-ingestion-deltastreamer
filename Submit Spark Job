@@ -15,8 +15,8 @@ spark-submit \
     --properties-file spark-config.properties \
     --master 'local[*]' \
     --executor-memory 1g \
-    --jars /Users/soumilshah/IdeaProjects/SparkProject/DeltaStreamer/jar/hudi-extensions-0.1.0-SNAPSHOT-bundled.jar,/Users/soumilshah/IdeaProjects/SparkProject/DeltaStreamer/jar/hudi-java-client-0.14.0.jar \
-     /Users/soumilshah/IdeaProjects/SparkProject/DeltaStreamer/jar/hudi-utilities-slim-bundle_2.12-0.14.0.jar \
+    --jars jar/hudi-extensions-0.1.0-SNAPSHOT-bundled.jar,jar/hudi-java-client-0.14.0.jar \
+     jar/hudi-utilities-slim-bundle_2.12-0.14.0.jar \
     --table-type COPY_ON_WRITE \
     --target-base-path 's3a://warehouse/database=default/table_name=sales'  \
     --target-table sales \
