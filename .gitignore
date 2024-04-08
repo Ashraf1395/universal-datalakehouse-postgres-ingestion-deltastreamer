@@ -20,3 +20,7 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+*.tgz
+spark-3.4.2-bin-hadoop3/
+jar/
