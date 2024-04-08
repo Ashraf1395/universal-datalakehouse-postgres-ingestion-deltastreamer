@@ -1,16 +1,16 @@
-Assignment ID,Order ID,Driver ID,Assigned Date,Assigned Status,Assigned Address,Assigned City,Assigned State,Assigned Zip Code
-6f2fc8bc-1b63-4104-a8a5-cd75ad3e141d,3da357fb-bdf8-456f-a46d-d2dfa905b776,3518933e-5a6d-4a73-9e5a-4af749cb0a2a,2024-04-07 13:32:48.986652,Pending,5446 April Island,Landryborough,Kansas,83736
-2245dc6f-e949-4ec2-821e-a4a47cff6a69,6bf30985-2aa5-4ce2-abd9-f1a7fb0a2b89,60932e5e-e85f-4e83-ab24-7971fc47ded1,2024-04-07 20:11:53.102818,In Progress,1917 Jackson Park,Gabriellaberg,Mississippi,47657
-12d18b84-a9e9-45e5-ba71-ab158feeaae0,78065871-e147-4a3e-83b4-69d79672b62b,b2abbc42-75ad-4390-bb00-ad2200c62138,2024-04-07 17:11:00.083073,Pending,1917 Jackson Park,Gabriellaberg,Mississippi,47657
-fe732fb6-3165-4552-aa78-3c4f3202a89a,3da357fb-bdf8-456f-a46d-d2dfa905b776,00e83f48-5989-4a48-b75f-92c2d3ec02ba,2024-04-07 14:47:18.504449,In Progress,5446 April Island,Landryborough,Kansas,83736
-030cf387-5069-4c9d-8e8d-0b971af8c193,ad43756d-6b75-422d-9dc9-20eeba1756de,60932e5e-e85f-4e83-ab24-7971fc47ded1,2024-04-08 07:54:33.180212,Pending,314 Aaron Manor,Port Patrick,Arizona,28530
-2399904a-e1ff-4bc9-acd0-099399dc63f7,ad43756d-6b75-422d-9dc9-20eeba1756de,3518933e-5a6d-4a73-9e5a-4af749cb0a2a,2024-04-08 01:40:53.151262,Pending,314 Aaron Manor,Port Patrick,Arizona,28530
-19f46b78-15a8-4a2d-a288-eb2aff3ca9e6,387b489b-3a1d-4210-acb2-58a166520ee8,60932e5e-e85f-4e83-ab24-7971fc47ded1,2024-04-08 11:14:38.338774,Completed,8985 Lisa Circles Apt. 891,East Beverly,Montana,18257
-ec7e93ac-4734-4f91-bc81-eb9121865d6d,3e746c66-a5e8-459b-a6bd-1d82a9fa5b51,60932e5e-e85f-4e83-ab24-7971fc47ded1,2024-04-07 21:20:45.059209,In Progress,5708 Steven Roads Suite 773,Lake Carlos,Utah,67601
-cb55b433-4152-40e1-8b21-1c11de3694f8,ddc677ff-5e34-4449-accd-3a825d2331ef,60932e5e-e85f-4e83-ab24-7971fc47ded1,2024-04-07 18:30:46.111978,Completed,581 Luna Ports,Williamsburgh,Rhode Island,77115
-bfa1c21d-0592-4577-bd69-c569e427924f,78065871-e147-4a3e-83b4-69d79672b62b,00e83f48-5989-4a48-b75f-92c2d3ec02ba,2024-04-07 21:42:27.583759,Pending,1917 Jackson Park,Gabriellaberg,Mississippi,47657
-910a5daf-cd17-4e5c-ae86-978fc976ed09,4a9d4f54-3a45-4974-a996-3fdffd4a4445,b2abbc42-75ad-4390-bb00-ad2200c62138,2024-04-07 18:02:59.818192,Completed,5708 Steven Roads Suite 773,Lake Carlos,Utah,67601
-89180ce2-d136-4a98-a4cd-8d9a5f1f79a6,3da357fb-bdf8-456f-a46d-d2dfa905b776,60932e5e-e85f-4e83-ab24-7971fc47ded1,2024-04-07 15:41:47.501195,In Progress,5446 April Island,Landryborough,Kansas,83736
-a0d90777-a55b-46a3-8276-4bf6963cb1ec,74979d39-80f5-4e6b-89b1-e77ab9bb25a2,60932e5e-e85f-4e83-ab24-7971fc47ded1,2024-04-07 15:59:13.506358,Completed,575 Steven Ways Suite 141,North Megan,Vermont,36597
-79459bad-b2df-40e7-826d-2908fb95a6af,1ba981cc-85df-41e1-9c14-5344756de856,b2abbc42-75ad-4390-bb00-ad2200c62138,2024-04-07 23:09:18.319578,Pending,5708 Steven Roads Suite 773,Lake Carlos,Utah,67601
-7249b978-7366-490e-a3c8-038ef1d9d207,4ffe0af4-db77-4182-9fc6-dea72b71caa0,b2abbc42-75ad-4390-bb00-ad2200c62138,2024-04-07 12:08:00.550123,Pending,314 Aaron Manor,Port Patrick,Arizona,28530
+assignment_id,order_id,driver_id,assigned_date,assigned_status,assigned_address,assigned_city,assigned_state,assigned_zip_code
+cba1a6ac-272b-4f73-bfe9-5b8a45ffe903,d6d86ba6-3b12-4294-b23c-9effe472e553,04c9ccff-1d5f-42fe-b408-59ad863b2c25,2024-04-08 01:19:17.364497,In Progress,6314 Jake Gardens Suite 267,East Melanietown,Missouri,36919
+e044ea2b-51b1-4faf-8011-2c06f94ff5d1,7c3668c9-5797-497c-97c6-6e6951747014,75a8072f-fcf3-4e31-aa29-1638f770aa43,2024-04-08 10:33:27.592819,Completed,16470 Johnson Causeway,Kennethmouth,Maine,72357
+a989a9f1-93f7-4435-a07e-a7e02f50fd40,d0088aa3-4e9f-4ab5-ae37-b47f18506fb0,f39ad1e3-c271-4ca8-8272-11a90fca83cf,2024-04-07 18:05:08.902965,In Progress,2670 Wagner Village,Fernandezburgh,Louisiana,79811
+677185a4-c6f0-416a-996e-34a674191bb7,eb7aa744-1746-4157-9ac0-69b697507d04,bfc4a816-3f39-46a5-b8db-7d91405d8faa,2024-04-08 04:25:43.939208,In Progress,16470 Johnson Causeway,Kennethmouth,Maine,72357
+b54916f2-0699-451b-8282-368a127d8850,40d400be-a097-434b-ae36-742ec3044ae2,75a8072f-fcf3-4e31-aa29-1638f770aa43,2024-04-07 17:15:26.005059,Completed,6314 Jake Gardens Suite 267,East Melanietown,Missouri,36919
+4b546d23-a8a5-4e26-8bd3-0bec64363089,d6d86ba6-3b12-4294-b23c-9effe472e553,04c9ccff-1d5f-42fe-b408-59ad863b2c25,2024-04-08 00:31:24.285302,Pending,6314 Jake Gardens Suite 267,East Melanietown,Missouri,36919
+f7ae3198-afca-45f4-96f7-d4f60a3b093e,7c3668c9-5797-497c-97c6-6e6951747014,bfc4a816-3f39-46a5-b8db-7d91405d8faa,2024-04-07 18:03:02.774934,Pending,16470 Johnson Causeway,Kennethmouth,Maine,72357
+217862b0-f3a2-4c63-8a27-127309481a7a,447221e3-2e07-4e32-aa03-0a4731c6ba14,bfc4a816-3f39-46a5-b8db-7d91405d8faa,2024-04-07 21:55:25.711333,In Progress,6314 Jake Gardens Suite 267,East Melanietown,Missouri,36919
+ba7838d5-8d83-4c49-84fc-869e6906c257,7e80a81d-f6d5-4441-88c5-1fd9292e352d,75a8072f-fcf3-4e31-aa29-1638f770aa43,2024-04-07 20:56:14.829768,In Progress,86422 Steven Well,North Daisyberg,Arkansas,81780
+3c081c62-93f5-4ea5-9a39-7fc646ef4ce3,223651be-2ecf-4bea-933c-ec7174744745,f39ad1e3-c271-4ca8-8272-11a90fca83cf,2024-04-07 20:00:25.034307,Completed,571 Mathews Club,Terriburgh,Wyoming,38681
+80207ba0-7c4b-47af-93bf-4ca1f0f5f338,7c2a3560-fc4a-408d-9d6d-b75ba498ad64,bfc4a816-3f39-46a5-b8db-7d91405d8faa,2024-04-08 07:59:21.259524,Pending,2670 Wagner Village,Fernandezburgh,Louisiana,79811
+35f1bdd9-5fb6-43dd-b2d4-232bd2b0d2a9,c8e03d0f-6f29-4390-90ce-2a133c94819e,f39ad1e3-c271-4ca8-8272-11a90fca83cf,2024-04-07 17:28:48.797495,Pending,2015 Diana Well,Paulchester,Arizona,22221
+4afd1565-ea59-4cb1-a97e-7d3ecea665ba,7e80a81d-f6d5-4441-88c5-1fd9292e352d,85464196-1224-4093-b9f0-fee388817759,2024-04-08 06:29:09.997446,Pending,86422 Steven Well,North Daisyberg,Arkansas,81780
+51c947c1-8244-4721-8799-bde677a9e314,223651be-2ecf-4bea-933c-ec7174744745,85464196-1224-4093-b9f0-fee388817759,2024-04-07 15:26:03.662371,In Progress,571 Mathews Club,Terriburgh,Wyoming,38681
+f292a114-83ca-4eb5-bc92-3e792c84e202,8029bd4f-8cbf-47d3-a210-f3035c616c58,bfc4a816-3f39-46a5-b8db-7d91405d8faa,2024-04-08 01:04:10.532896,In Progress,2670 Wagner Village,Fernandezburgh,Louisiana,79811

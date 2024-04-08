@@ -9,14 +9,14 @@ def generate_customer_data(num_customers):
     customers = []
     for _ in range(num_customers):
         customer = {
-            'Customer ID': fake.uuid4(),
-            'Customer Name': fake.name(),
-            'Customer Address': fake.street_address(),
-            'Customer City': fake.city(),
-            'Customer State': fake.state(),
-            'Customer Zip Code': fake.zipcode(),
-            'Customer Contact Number': fake.phone_number(),
-            'Customer Email': fake.email()
+            'customer_id': fake.uuid4(),
+            'customer_name': fake.name(),
+            'customer_address': fake.street_address(),
+            'customer_city': fake.city(),
+            'customer_state': fake.state(),
+            'customer_zip_code': fake.zipcode(),
+            'customer_contact_number': fake.phone_number(),
+            'customer_email': fake.email()
         }
         customers.append(customer)
     return customers
@@ -27,18 +27,18 @@ def generate_order_data(num_orders, customers):
     for _ in range(num_orders):
         customer = random.choice(customers)
         order = {
-            'Order ID': fake.uuid4(),
-            'Customer ID': customer['Customer ID'],
-            'Order Date': fake.date_time_between(start_date='-30d', end_date='now'),
-            'Delivery Date': fake.date_time_between(start_date='now', end_date='+30d'),
-            'Order Status': random.choice(['Pending', 'In Progress', 'Completed']),
-            'Order Address': customer['Customer Address'],
-            'Order City': customer['Customer City'],
-            'Order State': customer['Customer State'],
-            'Order Zip Code': customer['Customer Zip Code'],
-            'Item Description': fake.word(),
-            'Item Quantity': random.randint(1, 10),
-            'Item Weight': random.uniform(0.1, 10.0)
+            'order_id': fake.uuid4(),
+            'customer_id': customer['customer_id'],
+            'order_date': fake.date_time_between(start_date='-30d', end_date='now'),
+            'delivery_date': fake.date_time_between(start_date='now', end_date='+30d'),
+            'order_status': random.choice(['Pending', 'In Progress', 'Completed']),
+            'order_address': customer['customer_address'],
+            'order_city': customer['customer_city'],
+            'order_state': customer['customer_state'],
+            'order_zip_code': customer['customer_zip_code'],
+            'item_description': fake.word(),
+            'item_quantity': random.randint(1, 10),
+            'item_weight': random.uniform(0.1, 10.0)
         }
         orders.append(order)
     return orders
@@ -48,16 +48,16 @@ def generate_driver_data(num_drivers):
     drivers = []
     for _ in range(num_drivers):
         driver = {
-            'Driver ID': fake.uuid4(),
-            'Driver Name': fake.name(),
-            'Driver Contact Number': fake.phone_number(),
-            'Driver License Number': fake.random_number(digits=10),
-            'Vehicle ID': fake.random_number(digits=6),
-            'Vehicle Type': random.choice(['Car', 'Truck', 'Van']),
-            'Vehicle Registration Number': fake.random_number(digits=8),
-            'Driver Status': random.choice(['Available', 'Busy', 'Offline']),
-            'Current Location Latitude': fake.latitude(),
-            'Current Location Longitude': fake.longitude()
+            'driver_id': fake.uuid4(),
+            'driver_name': fake.name(),
+            'driver_contact_number': fake.phone_number(),
+            'driver_license_number': fake.random_number(digits=10),
+            'vehicle_id': fake.random_number(digits=6),
+            'vehicle_type': random.choice(['Car', 'Truck', 'Van']),
+            'vehicle_registration_number': fake.random_number(digits=8),
+            'driver_status': random.choice(['Available', 'Busy', 'Offline']),
+            'current_location_latitude': fake.latitude(),
+            'current_location_longitude': fake.longitude()
         }
         drivers.append(driver)
     return drivers
@@ -69,15 +69,15 @@ def generate_assignment_data(num_assignments, orders, drivers):
         order = random.choice(orders)
         driver = random.choice(drivers)
         assignment = {
-            'Assignment ID': fake.uuid4(),
-            'Order ID': order['Order ID'],
-            'Driver ID': driver['Driver ID'],
-            'Assigned Date': fake.date_time_between(start_date='-1d', end_date='now'),
-            'Assigned Status': random.choice(['Pending', 'In Progress', 'Completed']),
-            'Assigned Address': order['Order Address'],
-            'Assigned City': order['Order City'],
-            'Assigned State': order['Order State'],
-            'Assigned Zip Code': order['Order Zip Code']
+            'assignment_id': fake.uuid4(),
+            'order_id': order['order_id'],
+            'driver_id': driver['driver_id'],
+            'assigned_date': fake.date_time_between(start_date='-1d', end_date='now'),
+            'assigned_status': random.choice(['Pending', 'In Progress', 'Completed']),
+            'assigned_address': order['order_address'],
+            'assigned_city': order['order_city'],
+            'assigned_state': order['order_state'],
+            'assigned_zip_code': order['order_zip_code']
         }
         assignments.append(assignment)
     return assignments
@@ -116,7 +116,7 @@ conn = psycopg2.connect(
     dbname="metastore",
     user="hive",
     password="hive",
-    host="localhost",
+    host="metastore_db",
     port="5432"
 )
 
@@ -128,6 +128,10 @@ def import_csv_to_postgres(csv_file, table_name):
     # Load CSV data into pandas DataFrame
     df = pd.read_csv(csv_file)
     
+    # Drop existing table if it exists
+    drop_table_query = sql.SQL('DROP TABLE IF EXISTS {}').format(sql.Identifier(table_name))
+    cur.execute(drop_table_query)
+    
     # Create table in PostgreSQL
     create_table_query = sql.SQL('''
         CREATE TABLE IF NOT EXISTS {} (
@@ -135,7 +139,7 @@ def import_csv_to_postgres(csv_file, table_name):
         )
     ''').format(
         sql.Identifier(table_name),
-        sql.SQL(', ').join(sql.Identifier(column) + sql.SQL(' VARCHAR') for column in df.columns)
+        sql.SQL(', ').join(sql.Identifier(column.lower()) + sql.SQL(' VARCHAR') for column in df.columns)
     )
     cur.execute(create_table_query)
 

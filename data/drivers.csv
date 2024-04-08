@@ -1,6 +1,6 @@
-Driver ID,Driver Name,Driver Contact Number,Driver License Number,Vehicle ID,Vehicle Type,Vehicle Registration Number,Driver Status,Current Location Latitude,Current Location Longitude
-00e83f48-5989-4a48-b75f-92c2d3ec02ba,Calvin Williams,378-965-9656,9381553300,454594,Van,31553069,Offline,37.822434,39.548987
-b2abbc42-75ad-4390-bb00-ad2200c62138,Elizabeth Mcgrath,001-720-485-7331x15491,2189245670,552737,Van,85605891,Available,57.5191805,11.734939
-f28462e3-b71a-4d8e-bf1c-1f61803b1c4f,Ian Blair,+1-503-735-6573x0714,5746689602,51854,Truck,4137100,Offline,-59.1795495,55.231907
-60932e5e-e85f-4e83-ab24-7971fc47ded1,Raymond Walker,001-821-424-6624x837,7825421621,278397,Van,53713398,Available,88.3651665,106.231171
-3518933e-5a6d-4a73-9e5a-4af749cb0a2a,Taylor Suarez PhD,+1-562-321-0874x958,5632919651,756350,Car,11407842,Available,46.5339835,97.748086
+driver_id,driver_name,driver_contact_number,driver_license_number,vehicle_id,vehicle_type,vehicle_registration_number,driver_status,current_location_latitude,current_location_longitude
+85464196-1224-4093-b9f0-fee388817759,William Evans,478.468.7706x9314,9778983070,377702,Truck,18611455,Busy,10.4513985,-110.348534
+f39ad1e3-c271-4ca8-8272-11a90fca83cf,Kathleen Berry,873.967.8425x67324,968499998,164769,Truck,45764302,Offline,29.473531,-157.279794
+04c9ccff-1d5f-42fe-b408-59ad863b2c25,Emma Cameron,001-708-954-8359,79309286,143345,Truck,66590215,Offline,29.824562,154.466329
+75a8072f-fcf3-4e31-aa29-1638f770aa43,Anthony Harris,379.861.0177,7099770054,964990,Car,41430363,Offline,-9.4518805,-103.308328
+bfc4a816-3f39-46a5-b8db-7d91405d8faa,Ashley Rosario,001-944-875-4017x0458,855989750,878092,Truck,3732101,Offline,35.148305,-129.125247
