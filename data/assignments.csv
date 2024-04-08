@@ -1,16 +1,16 @@
 Assignment ID,Order ID,Driver ID,Assigned Date,Assigned Status,Assigned Address,Assigned City,Assigned State,Assigned Zip Code
-40f7c214-0516-49e0-8687-6deb0b2ab3c6,e8b09367-69a0-43ec-89f8-961eeacbc7d7,75abbf56-6039-40b4-9648-8678e7fe3456,2024-04-08 09:50:11.747725,In Progress,8973 Jeffrey Fort Suite 876,Andersonland,Vermont,86437
-71d6d4e6-2b0e-4496-a00b-8d7653443323,643ae855-9ab7-4ef4-b110-b2dbfe9f5121,75abbf56-6039-40b4-9648-8678e7fe3456,2024-04-07 12:43:17.790702,Completed,71191 Sandoval Viaduct Apt. 155,Michellechester,Tennessee,54793
-8ae176c8-1539-4e5b-b9eb-aa88aa20eb4a,09f2611b-d3e5-45d4-abc6-cb59bd7cadbc,2bd3b101-9385-4fe7-96d0-613457171374,2024-04-07 13:15:47.917267,In Progress,807 Jason Lane Apt. 111,South Amanda,Missouri,48808
-14176756-f671-43df-b7c7-a19bf3e91983,84402bc1-223b-493e-988d-ee2390336436,75abbf56-6039-40b4-9648-8678e7fe3456,2024-04-07 14:26:38.449868,Pending,1227 Robert Shores,Bakerstad,Virginia,83670
-73a94c3f-12e2-4f73-a34b-a0ccad08ec2d,e8a23b63-5e43-46a4-b864-dcaa430d5c46,75abbf56-6039-40b4-9648-8678e7fe3456,2024-04-08 07:03:33.591885,In Progress,869 Cervantes Estates,Warnerton,Massachusetts,15266
-870923a6-8d0e-43c9-b8a9-4701fc9ccce2,6111cc1a-2e19-4342-9e7c-b52cb4ff3223,75abbf56-6039-40b4-9648-8678e7fe3456,2024-04-08 00:45:51.267329,Completed,1752 Cynthia Spring Apt. 253,Lake Richard,Wyoming,60288
-42f9b5b8-5a76-43d5-94a6-feffb7c4025e,fc18698d-4ded-44d8-8686-ff975ad0556e,75abbf56-6039-40b4-9648-8678e7fe3456,2024-04-07 15:08:36.253962,In Progress,1227 Robert Shores,Bakerstad,Virginia,83670
-26b63c31-3960-433b-89e2-bb268797a11b,77b74d4c-a662-4b32-a7d2-b00c50dea0f6,c0560e65-3539-497e-bab7-37ecacd0811e,2024-04-08 06:00:18.703106,In Progress,112 Aaron Ports,Andreaport,Vermont,61038
-490aa26a-8d54-4337-9a95-d4ef50bcc5e1,c859501e-9cd3-4b70-b918-3f21caffdfdb,ad4878f3-dc76-4bd8-9264-8e0a5cb9ec1c,2024-04-08 02:48:08.019930,Completed,869 Cervantes Estates,Warnerton,Massachusetts,15266
-223e5fc3-4e10-4405-af98-e24d9c8834a5,bcf306fc-e185-436c-afc1-fb4d55303db3,2bd3b101-9385-4fe7-96d0-613457171374,2024-04-08 08:20:39.763820,Pending,1752 Cynthia Spring Apt. 253,Lake Richard,Wyoming,60288
-37084e32-af03-4983-b43f-9e468906d5be,09f2611b-d3e5-45d4-abc6-cb59bd7cadbc,c0560e65-3539-497e-bab7-37ecacd0811e,2024-04-08 01:24:54.126341,Pending,807 Jason Lane Apt. 111,South Amanda,Missouri,48808
-55fc3e5e-c71f-41e2-a64e-297e036c43e3,e8b09367-69a0-43ec-89f8-961eeacbc7d7,75abbf56-6039-40b4-9648-8678e7fe3456,2024-04-08 04:12:38.816359,Completed,8973 Jeffrey Fort Suite 876,Andersonland,Vermont,86437
-afafaa87-d34a-4c1d-ad95-6910283aafd3,7f884295-4405-47b4-977e-e4bae347fe3d,c0560e65-3539-497e-bab7-37ecacd0811e,2024-04-07 22:54:25.921582,Completed,807 Jason Lane Apt. 111,South Amanda,Missouri,48808
-3b2d9dab-b1da-4834-91dd-03cd25eeb147,be62b613-bb1b-4ec9-8e93-1d9450491e66,ad4878f3-dc76-4bd8-9264-8e0a5cb9ec1c,2024-04-07 18:42:11.195696,In Progress,1227 Robert Shores,Bakerstad,Virginia,83670
-cb74ec5b-77ac-439d-af2e-af70e270e882,09f2611b-d3e5-45d4-abc6-cb59bd7cadbc,8dc1236a-d541-4001-9694-87be1cb15563,2024-04-08 03:37:35.669057,Completed,807 Jason Lane Apt. 111,South Amanda,Missouri,48808
+6f2fc8bc-1b63-4104-a8a5-cd75ad3e141d,3da357fb-bdf8-456f-a46d-d2dfa905b776,3518933e-5a6d-4a73-9e5a-4af749cb0a2a,2024-04-07 13:32:48.986652,Pending,5446 April Island,Landryborough,Kansas,83736
+2245dc6f-e949-4ec2-821e-a4a47cff6a69,6bf30985-2aa5-4ce2-abd9-f1a7fb0a2b89,60932e5e-e85f-4e83-ab24-7971fc47ded1,2024-04-07 20:11:53.102818,In Progress,1917 Jackson Park,Gabriellaberg,Mississippi,47657
+12d18b84-a9e9-45e5-ba71-ab158feeaae0,78065871-e147-4a3e-83b4-69d79672b62b,b2abbc42-75ad-4390-bb00-ad2200c62138,2024-04-07 17:11:00.083073,Pending,1917 Jackson Park,Gabriellaberg,Mississippi,47657
+fe732fb6-3165-4552-aa78-3c4f3202a89a,3da357fb-bdf8-456f-a46d-d2dfa905b776,00e83f48-5989-4a48-b75f-92c2d3ec02ba,2024-04-07 14:47:18.504449,In Progress,5446 April Island,Landryborough,Kansas,83736
+030cf387-5069-4c9d-8e8d-0b971af8c193,ad43756d-6b75-422d-9dc9-20eeba1756de,60932e5e-e85f-4e83-ab24-7971fc47ded1,2024-04-08 07:54:33.180212,Pending,314 Aaron Manor,Port Patrick,Arizona,28530
+2399904a-e1ff-4bc9-acd0-099399dc63f7,ad43756d-6b75-422d-9dc9-20eeba1756de,3518933e-5a6d-4a73-9e5a-4af749cb0a2a,2024-04-08 01:40:53.151262,Pending,314 Aaron Manor,Port Patrick,Arizona,28530
+19f46b78-15a8-4a2d-a288-eb2aff3ca9e6,387b489b-3a1d-4210-acb2-58a166520ee8,60932e5e-e85f-4e83-ab24-7971fc47ded1,2024-04-08 11:14:38.338774,Completed,8985 Lisa Circles Apt. 891,East Beverly,Montana,18257
+ec7e93ac-4734-4f91-bc81-eb9121865d6d,3e746c66-a5e8-459b-a6bd-1d82a9fa5b51,60932e5e-e85f-4e83-ab24-7971fc47ded1,2024-04-07 21:20:45.059209,In Progress,5708 Steven Roads Suite 773,Lake Carlos,Utah,67601
+cb55b433-4152-40e1-8b21-1c11de3694f8,ddc677ff-5e34-4449-accd-3a825d2331ef,60932e5e-e85f-4e83-ab24-7971fc47ded1,2024-04-07 18:30:46.111978,Completed,581 Luna Ports,Williamsburgh,Rhode Island,77115
+bfa1c21d-0592-4577-bd69-c569e427924f,78065871-e147-4a3e-83b4-69d79672b62b,00e83f48-5989-4a48-b75f-92c2d3ec02ba,2024-04-07 21:42:27.583759,Pending,1917 Jackson Park,Gabriellaberg,Mississippi,47657
+910a5daf-cd17-4e5c-ae86-978fc976ed09,4a9d4f54-3a45-4974-a996-3fdffd4a4445,b2abbc42-75ad-4390-bb00-ad2200c62138,2024-04-07 18:02:59.818192,Completed,5708 Steven Roads Suite 773,Lake Carlos,Utah,67601
+89180ce2-d136-4a98-a4cd-8d9a5f1f79a6,3da357fb-bdf8-456f-a46d-d2dfa905b776,60932e5e-e85f-4e83-ab24-7971fc47ded1,2024-04-07 15:41:47.501195,In Progress,5446 April Island,Landryborough,Kansas,83736
+a0d90777-a55b-46a3-8276-4bf6963cb1ec,74979d39-80f5-4e6b-89b1-e77ab9bb25a2,60932e5e-e85f-4e83-ab24-7971fc47ded1,2024-04-07 15:59:13.506358,Completed,575 Steven Ways Suite 141,North Megan,Vermont,36597
+79459bad-b2df-40e7-826d-2908fb95a6af,1ba981cc-85df-41e1-9c14-5344756de856,b2abbc42-75ad-4390-bb00-ad2200c62138,2024-04-07 23:09:18.319578,Pending,5708 Steven Roads Suite 773,Lake Carlos,Utah,67601
+7249b978-7366-490e-a3c8-038ef1d9d207,4ffe0af4-db77-4182-9fc6-dea72b71caa0,b2abbc42-75ad-4390-bb00-ad2200c62138,2024-04-07 12:08:00.550123,Pending,314 Aaron Manor,Port Patrick,Arizona,28530

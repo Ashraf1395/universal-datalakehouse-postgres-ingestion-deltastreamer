@@ -100,7 +100,59 @@ drivers_df = pd.DataFrame(drivers)
 assignments_df = pd.DataFrame(assignments)
 
 # Save DataFrames to CSV files
-customers_df.to_csv('customers.csv', index=False)
-orders_df.to_csv('orders.csv', index=False)
-drivers_df.to_csv('drivers.csv', index=False)
-assignments_df.to_csv('assignments.csv', index=False)
+customers_df.to_csv('data/customers.csv', index=False)
+orders_df.to_csv('data/orders.csv', index=False)
+drivers_df.to_csv('data/drivers.csv', index=False)
+assignments_df.to_csv('data/assignments.csv', index=False)
+
+
+
+import psycopg2
+from psycopg2 import sql
+import pandas as pd
+
+# Connect to PostgreSQL
+conn = psycopg2.connect(
+    dbname="metastore",
+    user="hive",
+    password="hive",
+    host="localhost",
+    port="5432"
+)
+
+# Create a cursor object
+cur = conn.cursor()
+
+# Function to create table in PostgreSQL and import data
+def import_csv_to_postgres(csv_file, table_name):
+    # Load CSV data into pandas DataFrame
+    df = pd.read_csv(csv_file)
+    
+    # Create table in PostgreSQL
+    create_table_query = sql.SQL('''
+        CREATE TABLE IF NOT EXISTS {} (
+            {}
+        )
+    ''').format(
+        sql.Identifier(table_name),
+        sql.SQL(', ').join(sql.Identifier(column) + sql.SQL(' VARCHAR') for column in df.columns)
+    )
+    cur.execute(create_table_query)
+
+    # Import data into PostgreSQL
+    with open(csv_file, 'r') as f:
+        next(f)  # Skip the header
+        cur.copy_from(f, table_name, sep=',')
+    
+    conn.commit()
+    print(f"Data imported into PostgreSQL table '{table_name}'.")
+
+# Import data into PostgreSQL tables
+import_csv_to_postgres('data/customers.csv', 'customers')
+import_csv_to_postgres('data/orders.csv', 'orders')
+import_csv_to_postgres('data/drivers.csv', 'drivers')
+import_csv_to_postgres('data/assignments.csv', 'assignments')
+
+# Close the cursor and connection
+cur.close()
+conn.close()
