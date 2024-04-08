@@ -1,3 +1,5 @@
 jupyter
 trino
 ipython-sql
+pyspark==3.4.2
+faker

@@ -75,3 +75,11 @@ USE delta_db;
 
 
 CREATE TABLE delta_db.delta_sales USING DELTA LOCATION 's3a://warehouse/database=default/table_name=sales';
+
+
+CREATE SCHEMA iceberg_db LOCATION 's3a://warehouse/';
+
+-- Use the iceberg_db database
+USE iceberg_db;
+
+CREATE TABLE iceberg_db.ice_sales USING ICEBERG LOCATION 's3a://warehouse/database=default/table_name=sales';
