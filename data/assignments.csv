@@ -1,16 +1,16 @@
 assignment_id,order_id,driver_id,assigned_date,assigned_status,assigned_address,assigned_city,assigned_state,assigned_zip_code
-cba1a6ac-272b-4f73-bfe9-5b8a45ffe903,d6d86ba6-3b12-4294-b23c-9effe472e553,04c9ccff-1d5f-42fe-b408-59ad863b2c25,2024-04-08 01:19:17.364497,In Progress,6314 Jake Gardens Suite 267,East Melanietown,Missouri,36919
-e044ea2b-51b1-4faf-8011-2c06f94ff5d1,7c3668c9-5797-497c-97c6-6e6951747014,75a8072f-fcf3-4e31-aa29-1638f770aa43,2024-04-08 10:33:27.592819,Completed,16470 Johnson Causeway,Kennethmouth,Maine,72357
-a989a9f1-93f7-4435-a07e-a7e02f50fd40,d0088aa3-4e9f-4ab5-ae37-b47f18506fb0,f39ad1e3-c271-4ca8-8272-11a90fca83cf,2024-04-07 18:05:08.902965,In Progress,2670 Wagner Village,Fernandezburgh,Louisiana,79811
-677185a4-c6f0-416a-996e-34a674191bb7,eb7aa744-1746-4157-9ac0-69b697507d04,bfc4a816-3f39-46a5-b8db-7d91405d8faa,2024-04-08 04:25:43.939208,In Progress,16470 Johnson Causeway,Kennethmouth,Maine,72357
-b54916f2-0699-451b-8282-368a127d8850,40d400be-a097-434b-ae36-742ec3044ae2,75a8072f-fcf3-4e31-aa29-1638f770aa43,2024-04-07 17:15:26.005059,Completed,6314 Jake Gardens Suite 267,East Melanietown,Missouri,36919
-4b546d23-a8a5-4e26-8bd3-0bec64363089,d6d86ba6-3b12-4294-b23c-9effe472e553,04c9ccff-1d5f-42fe-b408-59ad863b2c25,2024-04-08 00:31:24.285302,Pending,6314 Jake Gardens Suite 267,East Melanietown,Missouri,36919
-f7ae3198-afca-45f4-96f7-d4f60a3b093e,7c3668c9-5797-497c-97c6-6e6951747014,bfc4a816-3f39-46a5-b8db-7d91405d8faa,2024-04-07 18:03:02.774934,Pending,16470 Johnson Causeway,Kennethmouth,Maine,72357
-217862b0-f3a2-4c63-8a27-127309481a7a,447221e3-2e07-4e32-aa03-0a4731c6ba14,bfc4a816-3f39-46a5-b8db-7d91405d8faa,2024-04-07 21:55:25.711333,In Progress,6314 Jake Gardens Suite 267,East Melanietown,Missouri,36919
-ba7838d5-8d83-4c49-84fc-869e6906c257,7e80a81d-f6d5-4441-88c5-1fd9292e352d,75a8072f-fcf3-4e31-aa29-1638f770aa43,2024-04-07 20:56:14.829768,In Progress,86422 Steven Well,North Daisyberg,Arkansas,81780
-3c081c62-93f5-4ea5-9a39-7fc646ef4ce3,223651be-2ecf-4bea-933c-ec7174744745,f39ad1e3-c271-4ca8-8272-11a90fca83cf,2024-04-07 20:00:25.034307,Completed,571 Mathews Club,Terriburgh,Wyoming,38681
-80207ba0-7c4b-47af-93bf-4ca1f0f5f338,7c2a3560-fc4a-408d-9d6d-b75ba498ad64,bfc4a816-3f39-46a5-b8db-7d91405d8faa,2024-04-08 07:59:21.259524,Pending,2670 Wagner Village,Fernandezburgh,Louisiana,79811
-35f1bdd9-5fb6-43dd-b2d4-232bd2b0d2a9,c8e03d0f-6f29-4390-90ce-2a133c94819e,f39ad1e3-c271-4ca8-8272-11a90fca83cf,2024-04-07 17:28:48.797495,Pending,2015 Diana Well,Paulchester,Arizona,22221
-4afd1565-ea59-4cb1-a97e-7d3ecea665ba,7e80a81d-f6d5-4441-88c5-1fd9292e352d,85464196-1224-4093-b9f0-fee388817759,2024-04-08 06:29:09.997446,Pending,86422 Steven Well,North Daisyberg,Arkansas,81780
-51c947c1-8244-4721-8799-bde677a9e314,223651be-2ecf-4bea-933c-ec7174744745,85464196-1224-4093-b9f0-fee388817759,2024-04-07 15:26:03.662371,In Progress,571 Mathews Club,Terriburgh,Wyoming,38681
-f292a114-83ca-4eb5-bc92-3e792c84e202,8029bd4f-8cbf-47d3-a210-f3035c616c58,bfc4a816-3f39-46a5-b8db-7d91405d8faa,2024-04-08 01:04:10.532896,In Progress,2670 Wagner Village,Fernandezburgh,Louisiana,79811
+fec35c71-e3af-4fe6-85f2-e452756443ef,6bf64d8d-ddf3-4aa4-906c-76d3febb72f0,ec4ad8a9-22c0-40d0-ae15-6a9b23bef971,2024-04-09 01:45:03.758441,In Progress,2721 Elizabeth Fork,West Charlesshire,South Dakota,49144
+59b7cea1-f2b0-45aa-80d5-357d15f53083,987ecf43-1e50-4bbf-9cf7-f2824127ce0b,5033c886-9644-4e1c-8d4c-da9633a8e9d6,2024-04-08 16:37:38.200131,Completed,54082 Amanda Coves Suite 659,East Jacob,New York,31935
+094abb12-4a56-4aaf-b33a-8fa2f2363322,e8e7fb97-f577-498e-a1c2-7f8f717497cc,2485a8d9-7bb4-4604-b84f-7f05b390f605,2024-04-09 05:09:27.906271,Completed,690 Tami Park Suite 040,Kennedymouth,North Dakota,82216
+accef490-42db-45c0-a53d-7ecfb9126276,79ce32c1-f219-4fe0-a659-95467ce028aa,ca753409-27e2-481f-9bb8-bdd036f8816d,2024-04-08 16:06:53.995788,In Progress,690 Tami Park Suite 040,Kennedymouth,North Dakota,82216
+ca1076fc-1a81-46ec-a2d6-451cb596a74b,445cac01-aece-475c-bfa3-294f205131f0,ca753409-27e2-481f-9bb8-bdd036f8816d,2024-04-09 09:47:58.133606,In Progress,5233 Jones Islands Suite 137,New Morganside,Virginia,06827
+4133e22e-54d8-44c0-8b51-2d3a056116ea,862d3ea1-e50c-485a-b010-178de432f471,2485a8d9-7bb4-4604-b84f-7f05b390f605,2024-04-08 23:16:09.884731,Pending,8616 Fisher Crescent,North Jacquelinebury,Kansas,89026
+303cd90e-3a46-4648-91f8-a5fe97110300,7ede77ba-20cc-413d-86b7-1da3e674eaa7,2485a8d9-7bb4-4604-b84f-7f05b390f605,2024-04-08 14:00:47.059007,Completed,5233 Jones Islands Suite 137,New Morganside,Virginia,06827
+8ea1e549-cfa4-4a07-817e-decbc7af7bb4,eebf7d05-6324-4934-b438-eb76e82cfe30,ca753409-27e2-481f-9bb8-bdd036f8816d,2024-04-09 10:57:20.497660,Completed,2876 Jacob Divide Suite 848,Adambury,Alabama,25516
+f2d2e121-5b7c-44d4-8b4a-ebe0393e5d7b,862d3ea1-e50c-485a-b010-178de432f471,997ff3a7-cbd3-41b9-9fae-dae714081a7a,2024-04-09 00:00:24.425010,Pending,8616 Fisher Crescent,North Jacquelinebury,Kansas,89026
+dee6eeaf-db1c-4788-a001-72253f8838c7,79ce32c1-f219-4fe0-a659-95467ce028aa,997ff3a7-cbd3-41b9-9fae-dae714081a7a,2024-04-09 02:48:14.062273,In Progress,690 Tami Park Suite 040,Kennedymouth,North Dakota,82216
+5c6cf2fc-0fe6-4f00-88ee-b472e48a2126,c5a4f1da-4586-42fc-a56e-cb41f25216e5,2485a8d9-7bb4-4604-b84f-7f05b390f605,2024-04-09 01:44:07.672138,In Progress,339 Garrison Estates,New Michelle,Maine,96524
+d5fbb84d-714a-4f2d-82b3-c1ab56b97821,c5a4f1da-4586-42fc-a56e-cb41f25216e5,ec4ad8a9-22c0-40d0-ae15-6a9b23bef971,2024-04-09 06:01:26.773270,Pending,339 Garrison Estates,New Michelle,Maine,96524
+1fbf3f4d-a19a-4322-b45c-99e1545c4997,0c699209-fd73-405f-92e1-b6c41c29c9c3,ca753409-27e2-481f-9bb8-bdd036f8816d,2024-04-09 03:30:15.148915,Completed,8541 Beck Greens Apt. 554,New Stephaniemouth,Rhode Island,35667
+3d80fc32-7954-4bc1-b41b-acc904a3f106,862d3ea1-e50c-485a-b010-178de432f471,ec4ad8a9-22c0-40d0-ae15-6a9b23bef971,2024-04-08 19:00:53.692337,Completed,8616 Fisher Crescent,North Jacquelinebury,Kansas,89026
+e6db3941-a7b4-422b-a245-94badeed23bb,eebf7d05-6324-4934-b438-eb76e82cfe30,997ff3a7-cbd3-41b9-9fae-dae714081a7a,2024-04-08 20:23:56.235389,Completed,2876 Jacob Divide Suite 848,Adambury,Alabama,25516

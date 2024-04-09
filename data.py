@@ -116,7 +116,7 @@ conn = psycopg2.connect(
     dbname="metastore",
     user="hive",
     password="hive",
-    host="metastore_db",
+    host="localhost",
     port="5432"
 )
 

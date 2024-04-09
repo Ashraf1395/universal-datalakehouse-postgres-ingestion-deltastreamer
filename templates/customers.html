@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+</head>
+<body>
+    <h1>Customers</h1>
+    <!-- Customer table will be displayed here -->
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Function to fetch data from the backend and display it in a table
+        function fetchDataAndDisplay(endpoint, tableId) {
+            $.ajax({
+                url: endpoint,
+                type: 'GET',
+                success: function(data) {
+                    // Clear existing table rows
+                    $(`#${tableId} tbody`).empty();
+                    // Populate table rows with data
+                    console.log(data)
+                    $.each(data, function(index, item) {
+                        $(`#${tableId} tbody`).append(`
+                            <tr>
+                                <td>${item.customer_id}</td>
+                                <td>${item.customer_name}</td>
+                                <td>${item.customer_address}</td>
+                                <td>${item.customer_city}</td>
+                                <td>${item.customer_state}</td>
+                                <td>${item.customer_zip_code}</td>
+                                <td>${item.customer_contact_number}</td>
+                                <td>${item.customer_email}</td>
+                            </tr>
+                        `);
+                    });
+                }
+            });
+        }
+
+        // Call the function to fetch and display data when the page loads
+        fetchDataAndDisplay('/customers', 'customers');
+    });
+</script>
+
