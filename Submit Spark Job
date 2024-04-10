@@ -9,6 +9,16 @@ WHERE salesid = 1;
 ========================================================
 With METADATA AND INDEX
 ========================================================
+spark-submit --class org.apache.hudi.utilities.deltastreamer.HoodieMultiTableDeltaStreamer `ls packaging/hudi-utilities-bundle/target/hudi-utilities-bundle-*.jar` \
+  --props s3:///temp/hudi-ingestion-config/kafka-source.properties \
+  --config-folder s3:///temp/hudi-ingestion-config \
+  --schemaprovider-class org.apache.hudi.utilities.schema.SchemaRegistryProvider \
+  --source-class org.apache.hudi.utilities.sources.AvroKafkaSource \
+  --source-ordering-field impresssiontime \
+  --base-path-prefix s3:///temp/hudi \ 
+  --target-table dummy_table \
+  --op UPSERT
+
 spark-submit \
     --class org.apache.hudi.utilities.streamer.HoodieStreamer \
     --packages 'org.apache.hudi:hudi-spark3.4-bundle_2.12:0.14.0,org.apache.hadoop:hadoop-aws:3.3.2' \
@@ -51,7 +61,30 @@ spark-submit \
     --hoodie-conf 'hoodie.datasource.hive_sync.table=customers' \
     --hoodie-conf 'hoodie.datasource.write.hive_style_partitioning=true'
 
+spark-submit \
+    --class org.apache.hudi.utilities.streamer.HoodieMultiTableStreamer \
+    --packages 'org.apache.hudi:hudi-spark3.4-bundle_2.12:0.14.0,org.apache.hadoop:hadoop-aws:3.3.2' \
+    --master 'local[*]' \
+    --executor-memory 1g \
+    --jars jar/hudi-extensions-0.1.0-SNAPSHOT-bundled.jar,jar/hudi-java-client-0.14.0.jar \
+     jar/hudi-utilities-slim-bundle_2.12-0.14.0.jar \
+    --props HUDI_CONF_DIR/kafka-source.properties \
+    --config-folder HUDI_CONF_DIR \
+    --table-type COPY_ON_WRITE \
+    --base-path-prefix 's3a://warehouse/database=default' \
+    --target-table merged \
+    --op UPSERT \
+    --enable-sync \
+    --enable-hive-sync \
+    --sync-tool-classes 'io.onetable.hudi.sync.OneTableSyncTool' \
+    --source-limit 4000000 \
+    --source-class org.apache.hudi.utilities.sources.debezium.PostgresDebeziumSource \
+    --payload-class org.apache.hudi.common.model.debezium.PostgresDebeziumAvroPayload \
+    --min-sync-interval-seconds 10 \
+    --continuous \
+    --source-ordering-field _event_origin_ts_ms
 
+    ; --source-ordering-field impresssiontime \
 
 # =========================================
 DELTA TABLES
